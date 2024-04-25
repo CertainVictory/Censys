@@ -1,0 +1,37 @@
+{
+  "name": "censys",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode development",
+    "build": "tsc && vite build  --mode development",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "cypress:run": "cypress run --headless --spec cypress/e2e/pagination_tests/* ",
+    "preview": "vite preview",
+    "test": "cypress:run"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "buffer": "^6.0.3",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "ipaddr.js": "^2.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "check-code-coverage": "^1.10.5",
+    "cypress": "^13.8.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}
